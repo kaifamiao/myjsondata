@@ -13,5 +13,10 @@
     "type": "robot",
     "content": "我是 ChatGPT，一个由 OpenAI 训练的大型语言模型。",
     "time": "2022-01-01 10:02:00"
+  },
+  {
+    "type": "robot",
+    "content":"/* C program to access MySQL database */ #include <stdio.h> #include <mysql.h> int main() { MYSQL *con = mysql_init(NULL); if (con == NULL) { fprintf(stderr, "%s\n", mysql_error(con)); exit(1); } if (mysql_real_connect(con, "localhost", "user", "password", "database", 0, NULL, 0) == NULL) { fprintf(stderr, "%s\n", mysql_error(con)); mysql_close(con); exit(1); } if (mysql_query(con, "SELECT * FROM table")) { fprintf(stderr, "%s\n", mysql_error(con)); mysql_close(con); exit(1); } MYSQL_RES *result = mysql_store_result(con); if (result == NULL) { fprintf(stderr, "%s\n", mysql_error(con)); mysql_close(con); exit(1); } int num_fields = mysql_num_fields(result); MYSQL_ROW row; while ((row = mysql_fetch_row(result))) { for(int i = 0; i < num_fields; i++) { printf("%s ", row[i] ? row[i] : "NULL"); } printf("\n"); } mysql_free_result(result); mysql_close(con); return 0; }"
+  "time": "2022-01-01 10:02:00"
   }
 ]
