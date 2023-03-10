@@ -7,5 +7,25 @@
 		"sender": "openai",
 		"message": "I'm an AI language model developed by OpenAI, so I don't have feelings. But I'm functioning well, thank you for asking! How can I assist you today?",
 		"time": "12:02 PM"
+	},
+ {
+		"sender": "user",
+		"message": "Hello, how are you today?",
+		"time": "12:00 PM"
+	},
+	{
+		"sender": "openai",
+		"message": "I'm an AI language model developed by OpenAI, so I don't have feelings. But I'm functioning well, thank you for asking! How can I assist you today?",
+		"time": "12:02 PM"
+	},
+ {
+		"sender": "user",
+		"message": "Hello, how are you today?",
+		"time": "12:00 PM"
+	},
+	{
+		"sender": "openai",
+		"message": "I'm an AI language model developed by OpenAI, so I don't have feelings. But I'm functioning well, thank you for asking! How can I assist you today?",
+		"time": "12:02 PM"
 	}
 ]
